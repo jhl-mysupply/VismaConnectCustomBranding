@@ -54,10 +54,13 @@ function SetupCustomCSS() {
             height: 100%;
         }
 
-        .right-section {
-            width: 100%;
-        }
+
     `
+
+    //.right-section {
+    //  width: 100 %;
+    //}
+
     const styleElement = document.createElement('style');
     styleElement.innerHTML = css;
     document.head.appendChild(styleElement);
@@ -87,7 +90,7 @@ function SetupLoginLayout(container) {
 
         const rightSectionFooter = document.createElement('div');
         rightSection.appendChild(rightSectionFooter);
-        rightSectionFooter.textContent = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&Aring; skal du kontakte ServiceDesk hos CIMT p&Aring; telefon 38 64 80 80.";
+        rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&Aring; skal du kontakte ServiceDesk hos CIMT p&Aring; telefon 38 64 80 80.";
     }
 
 }
