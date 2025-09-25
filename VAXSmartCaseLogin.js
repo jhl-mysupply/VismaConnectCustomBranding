@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (footerElement) {
         //Removes footer
-        footerElement.remove();
+        //footerElement.remove();
     }
 });
 
@@ -57,10 +57,6 @@ function SetupCustomCSS() {
 
     `
 
-    //.right-section {
-    //  width: 100 %;
-    //}
-
     const styleElement = document.createElement('style');
     styleElement.innerHTML = css;
     document.head.appendChild(styleElement);
@@ -86,11 +82,11 @@ function SetupLoginLayout(container) {
     if (rightSection) {
         rightSection.classList.remove('form-box-login');
         //rightSection.classList.remove('form-box');
-        rightSection.classList.add('right-section');
+        //rightSection.classList.add('right-section');
 
         const rightSectionFooter = document.createElement('div');
         rightSection.appendChild(rightSectionFooter);
-        rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&Aring; skal du kontakte ServiceDesk hos CIMT p&Aring; telefon 38 64 80 80.";
+        rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&aring; skal du kontakte ServiceDesk hos CIMT p&aring; telefon 38 64 80 80.";
     }
 
 }
