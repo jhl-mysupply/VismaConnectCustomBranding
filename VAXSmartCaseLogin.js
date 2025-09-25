@@ -1,20 +1,22 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+    const containerElement = document.querySelector('#main-container');
     const header = document.querySelector('.client-name-header');
-    const backgroundImageElement = document.querySelector('#main-container');
     const vismaLogoElement = document.querySelector('.visma-logo');
     const applicationLogoElement = document.querySelector('.application-logo');
     const loginBox = document.querySelector('.form-box');
 
-    if(header) {
-        header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
+
+    if (containerElement) {
+        SetupLoginLayout(containerElement);
     }
 
-    if (backgroundImageElement) {
-        backgroundImageElement.style.backgroundImage = "url('datanet.png')";
-        backgroundImageElement.style.backgroundImage = "";
+
+    if(header) {
+        header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
     }
 
     if (vismaLogoElement) {
@@ -30,3 +32,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+
+function SetupLoginLayout(container) {
+
+    //Create element under container
+    const leftSection = document.createElement('div');
+    container.appendChild(leftSection);
+
+
+    //Setup page structure
+    container.style.display = "grid";
+    container.style.gridTemplateColumns = "75% 25%";
+    containerElement.style.backgroundImage = "none";
+
+    //Left section
+    leftSection.style.backgroundImage = "url('https://fs.regionh.dk/adfs/portal/illustration/illustration.jpg?id=E81B0C54CFA9A6EC7B7E1337A7CF9BF29D81672EF703D72EFEC0FD66771CC1F9')";
+    leftSection.style.backgroundSize = "cover";
+    leftSection.style.backgroundRepeat = "no-repeat";
+    leftSection.style.height = "100%";
+}
