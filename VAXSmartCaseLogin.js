@@ -70,8 +70,9 @@ function SetupLoginLayout(container) {
     container.classList.add('page-container');
 
     //Left section
+    const leftSection = document.createElement('div');
+
     if (leftSection) {
-        const leftSection = document.createElement('div');
         container.prepend(leftSection);
         leftSection.classList.add('left-section');
     }
