@@ -85,7 +85,8 @@ function SetupLoginLayout(container) {
         rightSection.classList.remove('form-box');
         rightSection.classList.add('right-section');
 
-        const rightSectionFooter = rightSection.createElement('div');
+        const rightSectionFooter = document.createElement('div');
+        rightSection.appendChild(rightSectionFooter);
         rightSectionFooter.textContent = "Kan du ikke huske dit brugernavn og/eller din adgangskode, så skal du kontakte ServiceDesk hos CIMT på telefon 38 64 80 80.";
     }
 
