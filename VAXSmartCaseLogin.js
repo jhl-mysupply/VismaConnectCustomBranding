@@ -44,10 +44,10 @@ function SetupLoginLayout(container) {
     //Setup page structure
     container.style.display = "grid";
     container.style.gridTemplateColumns = "75% 25%";
-    containerElement.style.backgroundImage = "none";
+    container.style.backgroundImage = "none";
 
     //Left section
-    leftSection.style.backgroundImage = "url('https://fs.regionh.dk/adfs/portal/illustration/illustration.jpg?id=E81B0C54CFA9A6EC7B7E1337A7CF9BF29D81672EF703D72EFEC0FD66771CC1F9')";
+    leftSection.style.backgroundImage = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-background-image.jpg";
     leftSection.style.backgroundSize = "cover";
     leftSection.style.backgroundRepeat = "no-repeat";
     leftSection.style.height = "100%";
