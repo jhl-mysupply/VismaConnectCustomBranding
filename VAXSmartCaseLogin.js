@@ -42,6 +42,9 @@ function SetupCustomCSS() {
             display: grid;
             grid-template-columns: 75% 25%;
             background-image: none;
+            align-items: center;
+            min-height: 100%;
+            background: white;
         }
 
         .left-section {
@@ -63,6 +66,7 @@ function SetupCustomCSS() {
 function SetupLoginLayout(container) {
 
     //Create element under container
+    container.removeAttribute('id');
     const leftSection = document.createElement('div');
     container.prepend(leftSection);
 
