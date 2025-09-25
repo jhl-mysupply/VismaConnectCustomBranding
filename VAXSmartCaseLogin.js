@@ -110,8 +110,6 @@ function SetupLoginLayout(container) {
             const microsoft = externalProviderContainer.querySelector('#form-provider-microsoft');
             const mitId = externalProviderContainer.querySelector('#form-provider-mitid');
 
-            
-
             if (microsoft && mitId) {
                 const microsoftLabel = document.createElement('label');
                 microsoftLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
@@ -119,9 +117,8 @@ function SetupLoginLayout(container) {
                 const mitIdLabel = document.createElement('label');
                 mitIdLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
 
-
-                container.insertBefore(microsoftLabel, microsoft);
-                container.insertBefore(mitIdLabel, mitId);
+                externalProviderContainer.insertBefore(microsoftLabel, microsoft);
+                externalProviderContainer.insertBefore(mitIdLabel, mitId);
             }
         }
     }
