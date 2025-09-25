@@ -65,7 +65,7 @@ function SetupCustomCSS() {
         }
 
         .footer-text {
-            postion: absolute;
+            position: absolute;
             bottom: 0;
             padding: 2rem;
         }
@@ -95,7 +95,7 @@ function SetupLoginLayout(container) {
 
     if (rightSection) {
         rightSection.classList.remove('form-box-login');
-        rightSection.classList.remove('form-box');
+        //rightSection.classList.remove('form-box');
         rightSection.classList.add('right-section');
 
         const rightSectionFooter = document.createElement('div');
