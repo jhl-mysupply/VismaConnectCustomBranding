@@ -38,8 +38,7 @@ function SetupLoginLayout(container) {
 
     //Create element under container
     const leftSection = document.createElement('div');
-    container.appendChild(leftSection);
-
+    container.prepend(leftSection);
 
     //Setup page structure
     container.style.display = "grid";
@@ -47,7 +46,7 @@ function SetupLoginLayout(container) {
     container.style.backgroundImage = "none";
 
     //Left section
-    leftSection.style.backgroundImage = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-background-image.jpg";
+    leftSection.style.backgroundImage = "url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-background-image.jpg')";
     leftSection.style.backgroundSize = "cover";
     leftSection.style.backgroundRepeat = "no-repeat";
     leftSection.style.height = "100%";
