@@ -94,7 +94,7 @@ function SetupLoginLayout(container) {
         rightSection.classList.add('right-section');
 
         const rightSectionLoginBox = rightSection.querySelector('#login-form-container');
-        const boxFooter = rightSection.querySelector('.box-footer');
+        const boxFooter = rightSection.querySelector('.form-footer');
 
         if (rightSectionLoginBox && boxFooter) {
             rightSectionLoginBox.appendChild(boxFooter);
