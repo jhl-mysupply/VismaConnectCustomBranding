@@ -55,13 +55,9 @@ function SetupCustomCSS() {
 
         }
         .right-section {
+            display: flex;
+            align-items: center;
             height: 100%;
-            max-width: 520px;
-            padding-top: 4%;
-            margin: 0 auto;
-            position: relative;
-            z-index: 100;
-
         }
 
         .footer-text {
@@ -95,13 +91,25 @@ function SetupLoginLayout(container) {
 
     if (rightSection) {
         rightSection.classList.remove('form-box-login');
-        //rightSection.classList.remove('form-box');
+        const loginBoxCSS = rightSection.classList[0];
+        rightSection.classList[0] = rightSection.classList[1];
+        rightSection.classList[1] = loginBoxCSS;
         rightSection.classList.add('right-section');
+
+        const rightSectionLoginBox = rightSection.querySelector('#login-form-container');
+
+        const boxFooter = rightSection.querySelector('.box-footer');
+
+        if (rightSectionLoginBox && boxFooter) {
+            rightSectionLoginBox.appendChild(boxFooter);
+        }
 
         const rightSectionFooter = document.createElement('div');
         rightSection.appendChild(rightSectionFooter);
         rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&aring; skal du kontakte ServiceDesk hos CIMT p&aring; telefon 38 64 80 80.";
         rightSectionFooter.classList.add('footer-text');
+
+
     }
 
 }
