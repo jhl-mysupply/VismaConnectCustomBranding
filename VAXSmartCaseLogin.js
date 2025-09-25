@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-
 function SetupCustomCSS() {
     const css =
     `
@@ -104,5 +102,27 @@ function SetupLoginLayout(container) {
         rightSection.appendChild(rightSectionFooter);
         rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&aring; skal du kontakte ServiceDesk hos CIMT p&aring; telefon 38 64 80 80.";
         rightSectionFooter.classList.add('footer-text');
+
+        //Setup external provider button layout
+        const externalProviderContainer = rightSection.querySelector('.external-providers');
+
+        if (externalProviderContainer) {
+            const microsoft = externalProviderContainer.querySelector('#form-provider-microsoft');
+            const mitId = externalProviderContainer.querySelector('#form-provider-mitid');
+
+            
+
+            if (microsoft && mitId) {
+                const microsoftLabel = document.createElement('label');
+                microsoftLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
+
+                const mitIdLabel = document.createElement('label');
+                mitIdLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
+
+
+                container.insertBefore(microsoftLabel, microsoft);
+                container.insertBefore(mitIdLabel, mitId);
+            }
+        }
     }
 }
