@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (vismaLogoElement) {
-        vismaLogoElement.src = "https://www.regionh.dk/til-fagfolk/Om-Region-H/regionens-design/logo-og-grundelementer/logo-til-print-og-web/Publishingimages/RegionH_logo.jpg";
+        vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg";
     }
 
     if (applicationLogoElement) {
-        applicationLogoElement.src = "https://www.regionh.dk/til-fagfolk/Om-Region-H/regionens-design/logo-og-grundelementer/logo-til-print-og-web/Publishingimages/Maerke_RegH.jpg";
+        applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg";
     }
 
     if (loginBox) {
