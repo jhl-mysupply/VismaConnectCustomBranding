@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (footerElement) {
+        //Removes footer
         footerElement.remove();
     }
 });
@@ -80,7 +81,7 @@ function SetupLoginLayout(container) {
         const rightborder = rightSection.querySelector('#login-form-container');
 
         if (rightborder) {
-            rightborder.classList.add('right-section');
+            rightborder.classList.add('.right-section');
         }
     }
 
