@@ -77,12 +77,10 @@ function SetupLoginLayout(container) {
 
     if (rightSection) {
         rightSection.classList.remove('form-box-login');
+        rightSection.classList.remove('.form-box');
+        rightSection.classList.add('right-section');
 
         const rightborder = rightSection.querySelector('#login-form-container');
-
-        if (rightborder) {
-            rightborder.classList.add('.right-section');
-        }
     }
 
 }
