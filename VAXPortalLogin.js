@@ -37,6 +37,10 @@ function SetupCustomCSS() {
             height: 100%;
         }
 
+        .external-providers-button {
+            border-radius: 25px;
+        }
+
         .login-box-padding {
             padding-bottom: 10rem !important;
         }
@@ -134,6 +138,12 @@ function SetupLoginLayout(container) {
                 externalProviderContainer.insertBefore(microsoftLabel, microsoft);
                 externalProviderContainer.insertBefore(mitIdLabel, mitId);
             }
+
+            const microsoftButton = document.getElementById('form-provider-microsoft');
+            const mitIdButton = document.getElementById('form-provider-mitid');
+
+            microsoftButton.classList.add('external-providers-button');
+            mitIdButton.classList.add('external-providers-button');
         }
     }
 }

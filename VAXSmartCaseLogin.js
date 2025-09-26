@@ -29,8 +29,14 @@ function SetupCustomCSS() {
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
-            background-color: black;
+            background-color: #3885b2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .left-section-image {
+            border: none;
         }
 
         .right-section {
@@ -38,6 +44,11 @@ function SetupCustomCSS() {
             align-items: center;
             height: 100%;
         }
+
+        .external-providers-button {
+            border-radius: 25px;
+        }
+
 
         .login-box-padding {
             padding-bottom: 10rem !important;
@@ -47,10 +58,6 @@ function SetupCustomCSS() {
             position: absolute;
             bottom: 0;
             padding: 2rem;
-        }
-
-        label {
-            font-weight: bold !important;
         }
     `
 
@@ -127,18 +134,10 @@ function SetupLoginLayout(container) {
 
         if (externalProviderContainer) {
             const microsoft = externalProviderContainer.querySelector('#form-provider-microsoft');
-            const mitId = externalProviderContainer.querySelector('#form-provider-mitid');
 
-            if (microsoft && mitId) {
-                const microsoftLabel = document.createElement('label');
-                microsoftLabel.textContent = "Log ind for medarbejdere i Region Hovedstaden";
+            const microsoftButton = document.getElementById('form-provider-microsoft');
 
-                const mitIdLabel = document.createElement('label');
-                mitIdLabel.textContent = "Log ind for eksterne";
-
-                externalProviderContainer.insertBefore(microsoftLabel, microsoft);
-                externalProviderContainer.insertBefore(mitIdLabel, mitId);
-            }
+            microsoftButton.classList.add('external-providers-button');
         }
     }
 }
