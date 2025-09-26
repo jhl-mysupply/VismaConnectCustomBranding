@@ -29,6 +29,8 @@ function SetupCustomCSS() {
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
+            background-color: black;
+
         }
 
         .right-section {
@@ -70,6 +72,7 @@ function SetupLoginLayout(container) {
     if (leftSection) {
         container.prepend(leftSection);
         leftSection.classList.add('left-section');
+        leftSection.appendChild(leftSectionImage);
         leftSectionImage.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-wide-logo-white.png";
     }
 
