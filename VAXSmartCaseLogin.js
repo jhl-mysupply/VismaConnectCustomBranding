@@ -101,7 +101,7 @@ function SetupLoginLayout(container) {
 
 
         if (header) {
-            header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
+            header.textContent = "SMART CASE";
         }
 
         if (applicationLogoElement) {
