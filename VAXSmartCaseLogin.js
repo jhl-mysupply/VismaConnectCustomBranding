@@ -71,9 +71,10 @@ function SetupLoginLayout(container) {
 
     if (leftSection) {
         container.prepend(leftSection);
-        leftSection.classList.add('left-section-image');
+        leftSection.classList.add('left-section');
         leftSection.appendChild(leftSectionImage);
         leftSectionImage.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-wide-logo-white.png";
+        leftSectionImage.classList.add('left-section-image');
     }
 
     //Right section
