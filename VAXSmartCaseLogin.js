@@ -6,30 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     SetupCustomCSS();
 
     const containerElement = document.querySelector('#main-container');
-    const header = document.querySelector('.client-name-header');
-    const vismaLogoElement = document.querySelector('.visma-logo');
-    const applicationLogoElement = document.querySelector('.application-logo');
-    const footerElement = document.querySelector('.footer-container');
+    
 
     if (containerElement) {
         SetupLoginLayout(containerElement);
-    }
-
-    if(header) {
-        header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
-    }
-
-    if (vismaLogoElement) {
-        vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg";
-    }
-
-    if (applicationLogoElement) {
-        applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg";
-    }
-
-    if (footerElement) {
-        //Removes footer
-        footerElement.remove();
     }
 });
 
@@ -58,10 +38,22 @@ function SetupCustomCSS() {
             height: 100%;
         }
 
+        .application-logo {
+            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg');
+        }
+
+        .footer-logo {
+            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg');
+        }
+
         .footer-text {
             position: absolute;
             bottom: 0;
             padding: 2rem;
+        }
+
+        label {
+            font-weight: bold;
         }
     `
 
@@ -103,6 +95,31 @@ function SetupLoginLayout(container) {
         rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&aring; skal du kontakte ServiceDesk hos CIMT p&aring; telefon 38 64 80 80.";
         rightSectionFooter.classList.add('footer-text');
 
+
+        //Setup login box layout
+        const header = document.querySelector('.client-name-header');
+        const applicationLogoElement = document.querySelector('.application-logo');
+        const vismaLogoElement = document.querySelector('.visma-logo');
+        const footerElement = document.querySelector('.footer-container');
+
+
+        if (header) {
+            header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
+        }
+
+        if (applicationLogoElement) {
+            applicationLogoElement.classList.add('application-logo');
+        }
+
+        if (vismaLogoElement) {
+            vismaLogoElement.classList.add('footer-logo');
+        }
+
+        if (footerElement) {
+            //Removes footer
+            footerElement.remove();
+        }
+
         //Setup external provider button layout
         const externalProviderContainer = rightSection.querySelector('.external-providers');
 
@@ -112,10 +129,10 @@ function SetupLoginLayout(container) {
 
             if (microsoft && mitId) {
                 const microsoftLabel = document.createElement('label');
-                microsoftLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
+                microsoftLabel.textContent = "Log ind for medarbejdere i Region Hovedstaden";
 
                 const mitIdLabel = document.createElement('label');
-                mitIdLabel.textContent = "Log in for medarbejdere i Region Hovedstaden";
+                mitIdLabel.textContent = "Log ind for eksterne";
 
                 externalProviderContainer.insertBefore(microsoftLabel, microsoft);
                 externalProviderContainer.insertBefore(mitIdLabel, mitId);
