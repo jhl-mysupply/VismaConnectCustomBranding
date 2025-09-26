@@ -25,7 +25,7 @@ function SetupCustomCSS() {
         }
 
         .left-section {
-            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-background-image.jpg');
+            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/VAXPortal/RH-background-image.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
@@ -105,11 +105,11 @@ function SetupLoginLayout(container) {
         }
 
         if (applicationLogoElement) {
-            applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg";
+            applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/VAXPortal/RH-logo.jpg";
         }
 
         if (vismaLogoElement) {
-            vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg";
+            vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/VAXPortal/RH-wide-logo.jpg";
         }
 
         if (footerElement) {

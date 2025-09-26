@@ -25,12 +25,12 @@ function SetupCustomCSS() {
         }
 
         .left-section {
-            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-background-image.jpg');
+            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/datanet-background');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
-
         }
+
         .right-section {
             display: flex;
             align-items: center;
@@ -65,10 +65,12 @@ function SetupLoginLayout(container) {
 
     //Left section
     const leftSection = document.createElement('div');
+    const leftSectionImage = document.createElement('img');
 
     if (leftSection) {
         container.prepend(leftSection);
         leftSection.classList.add('left-section');
+        leftSectionImage.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-wide-logo-white.png";
     }
 
     //Right section
@@ -105,11 +107,11 @@ function SetupLoginLayout(container) {
         }
 
         if (applicationLogoElement) {
-            applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg";
+            applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-logo.png";
         }
 
         if (vismaLogoElement) {
-            vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg";
+            vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-wide-logo.png";
         }
 
         if (footerElement) {
