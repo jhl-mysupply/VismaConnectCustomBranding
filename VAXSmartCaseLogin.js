@@ -83,7 +83,7 @@ function SetupLoginLayout(container) {
 
         if (rightSectionLoginBox && boxFooter) {
             rightSectionLoginBox.appendChild(boxFooter);
-            rightSectionLoginBox.classList.remove("padding-bottonm-0");
+            rightSectionLoginBox.classList.remove("padding-bottom-0");
             rightSectionLoginBox.classList.add("login-box-padding");
         }
 
