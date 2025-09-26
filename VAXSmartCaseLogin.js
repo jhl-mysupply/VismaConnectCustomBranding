@@ -46,18 +46,11 @@ function SetupCustomCSS() {
         }
 
         .external-providers-button {
-            border-radius: 25px;
+            border-radius: 25px !important;
         }
-
 
         .login-box-padding {
             padding-bottom: 10rem !important;
-        }
-
-        .footer-text {
-            position: absolute;
-            bottom: 0;
-            padding: 2rem;
         }
     `
 
@@ -78,7 +71,7 @@ function SetupLoginLayout(container) {
 
     if (leftSection) {
         container.prepend(leftSection);
-        leftSection.classList.add('left-section');
+        leftSection.classList.add('left-section-image');
         leftSection.appendChild(leftSectionImage);
         leftSectionImage.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/Mysupply-wide-logo-white.png";
     }
@@ -98,12 +91,6 @@ function SetupLoginLayout(container) {
             rightSectionLoginBox.classList.remove("padding-bottom-0");
             rightSectionLoginBox.classList.add("login-box-padding");
         }
-
-        const rightSectionFooter = document.createElement('div');
-        rightSection.appendChild(rightSectionFooter);
-        rightSectionFooter.innerHTML = "Kan du ikke huske dit brugernavn og/eller din adgangskode, s&aring; skal du kontakte ServiceDesk hos CIMT p&aring; telefon 38 64 80 80.";
-        rightSectionFooter.classList.add('footer-text');
-
 
         //Setup login box layout
         const header = document.querySelector('.client-name-header');
@@ -135,7 +122,7 @@ function SetupLoginLayout(container) {
         if (externalProviderContainer) {
             const microsoft = externalProviderContainer.querySelector('#form-provider-microsoft');
 
-            const microsoftButton = document.getElementById('form-provider-microsoft');
+            const microsoftButton = document.getElementById('microsoft-external-auth-button');
 
             microsoftButton.classList.add('external-providers-button');
         }
