@@ -120,13 +120,9 @@ function SetupLoginLayout(container) {
         }
 
         //Setup external provider button layout
-        const externalProviderContainer = rightSection.querySelector('.external-providers');
+        const microsoftButton = document.getElementById('microsoft-external-auth-button');
 
-        if (externalProviderContainer) {
-            const microsoft = externalProviderContainer.querySelector('#form-provider-microsoft');
-
-            const microsoftButton = document.getElementById('microsoft-external-auth-button');
-
+        if (microsoftButton) {
             microsoftButton.classList.add('external-providers-button');
         }
     }

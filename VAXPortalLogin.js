@@ -35,6 +35,7 @@ function SetupCustomCSS() {
             display: flex;
             align-items: center;
             height: 100%;
+            width: 100%;
         }
 
         .external-providers-button {
@@ -42,6 +43,7 @@ function SetupCustomCSS() {
         }
 
         .login-box-padding {
+            width: 100%;
             padding-bottom: 10rem !important;
         }
 
