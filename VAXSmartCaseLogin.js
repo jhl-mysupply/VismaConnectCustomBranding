@@ -38,7 +38,7 @@ function SetupCustomCSS() {
         }
 
         .login-box-padding {
-            padding-bottom: 10rem;
+            padding-bottom: 10rem !important;
         }
 
         .footer-text {
