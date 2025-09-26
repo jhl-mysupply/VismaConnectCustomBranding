@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     SetupCustomCSS();
 
     const containerElement = document.querySelector('#main-container');
-    
 
     if (containerElement) {
         SetupLoginLayout(containerElement);
@@ -36,14 +35,6 @@ function SetupCustomCSS() {
             display: flex;
             align-items: center;
             height: 100%;
-        }
-
-        .application-logo {
-            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg');
-        }
-
-        .footer-logo {
-            background-image: url('https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg');
         }
 
         .footer-text {
@@ -108,11 +99,11 @@ function SetupLoginLayout(container) {
         }
 
         if (applicationLogoElement) {
-            applicationLogoElement.classList.add('application-logo');
+            applicationLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-logo.jpg";
         }
 
         if (vismaLogoElement) {
-            vismaLogoElement.classList.add('footer-logo');
+            vismaLogoElement.src = "https://jhl-mysupply.github.io/VismaConnectCustomBranding/Images/RH-wide-logo.jpg";
         }
 
         if (footerElement) {
