@@ -36,7 +36,7 @@ function SetupCustomCSS() {
         }
 
         .left-section-image {
-            border: none;
+            border: none !important;
         }
 
         .right-section {
