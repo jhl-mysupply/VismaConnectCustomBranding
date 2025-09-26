@@ -50,6 +50,7 @@ function SetupCustomCSS() {
         }
 
         .login-box-padding {
+            width: 100%;
             padding-bottom: 10rem !important;
         }
     `
@@ -101,7 +102,7 @@ function SetupLoginLayout(container) {
 
 
         if (header) {
-            header.textContent = "SMART CASE";
+            header.textContent = "Smart Case";
         }
 
         if (applicationLogoElement) {
