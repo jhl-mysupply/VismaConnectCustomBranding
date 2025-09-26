@@ -44,7 +44,7 @@ function SetupCustomCSS() {
         }
 
         label {
-            font-weight: bold;
+            font-weight: bold !important;
         }
     `
 
