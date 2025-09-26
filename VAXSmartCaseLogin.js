@@ -37,6 +37,10 @@ function SetupCustomCSS() {
             height: 100%;
         }
 
+        .login-box-padding {
+            padding-bottom: 10rem;
+        }
+
         .footer-text {
             position: absolute;
             bottom: 0;
@@ -79,6 +83,8 @@ function SetupLoginLayout(container) {
 
         if (rightSectionLoginBox && boxFooter) {
             rightSectionLoginBox.appendChild(boxFooter);
+            rightSectionLoginBox.classList.remove("padding-bottonm-0");
+            rightSectionLoginBox.classList.add("login-box-padding");
         }
 
         const rightSectionFooter = document.createElement('div');
