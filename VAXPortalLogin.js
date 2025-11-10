@@ -132,7 +132,7 @@ function SetupLoginLayout(container) {
 
             if (microsoft && mitId) {
                 const microsoftLabel = document.createElement('label');
-                microsoftLabel.textContent = "Log ind for medarbejdere i Region Hovedstaden";
+                microsoftLabel.textContent = "Log ind for medarbejdere i Region Hovedstaden med SSO";
 
                 const mitIdLabel = document.createElement('label');
                 mitIdLabel.textContent = "Log ind for eksterne";
