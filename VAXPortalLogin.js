@@ -107,7 +107,7 @@ function SetupLoginLayout(container) {
 
 
         if (header) {
-            header.textContent = "Velkommen til Region Hovedstadens medarbejdsportal";
+            header.textContent = "Velkommen til Region Hovedstaden";
         }
 
         if (applicationLogoElement) {
